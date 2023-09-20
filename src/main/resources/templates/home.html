@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Spring Thymeleaf Ejemplo</title>
+</head>
+<body>
+<h1>Esta es la home del proyecto</h1>
+<h2 th:text="'Mensaje: '+${mensaje}"></h2>
+<h2 th:text="'El número: '+${unnumero}"></h2>
+<h2 th:text="'Otro Mensaje: '+${otromensaje}"></h2>
+
+
+
+
+<h2>---  Detalle del producto: ---</h2>
+
+<h3 th:text="'Identificador: ' + ${producto.id}"></h3>
+<h3 th:text="'Nombre: ' +${producto.nombre}"></h3>
+<h3 th:text="'Descripción: ' + ${producto.descripcion}"></h3>
+<h3 th:text="'Precio: ' +${producto.precio}"></h3>
+
+</body>
+</html>
